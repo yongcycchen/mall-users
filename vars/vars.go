@@ -1,9 +1,9 @@
 package vars
 
 import (
-	"github.com/yongcycchen/mall-api/pkg/util/goroutine"
 	"gitee.com/kelvins-io/common/queue"
 	"gitee.com/kelvins-io/kelvins/config/setting"
+	"github.com/yongcycchen/mall-api/pkg/util/goroutine"
 )
 
 var (

@@ -11,6 +11,13 @@ func main() {
 	application := &vars.GRPCApplication{
 		Application: &vars.Application{
 			LoadConfig: startup.LoadConfig,
+			SetupVars:  startup.SetupVars,
+			Name:       APP_NAME,
 		},
+		RegisterGRPCServer: startup.RegisterGRPCServer,
+		RegisterGateway:    startup.RegisterGateway,
+		RegisterHttpRoute:  startup.RegisterHttpRoute,
 	}
+	vars.App = application
+
 }
